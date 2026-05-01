@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Mahir Dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0b0f1a, #111827);
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+
+    header h2 {
+      margin: 0;
+      color: #00ffcc;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5e1;
+      margin-bottom: 40px;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      text-align: left;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,204,0.08);
+    }
+
+    .card h3 {
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background: #1f2937;
+      color: white;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      background: #00ffcc;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #00c9a7;
+    }
+
+    .email-box {
+      text-align: center;
+    }
+
+    .email-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #1f2937;
+      color: #00ffcc;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .email-link:hover {
+      background: #374151;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>🎮 Mahir Dev</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Contact Me</h1>
+  <p>Feel free to send me a message or email me directly</p>
+
+  <div class="contact-box">
+
+    <!-- Contact Form -->
+    <div class="card">
+      <h3>📩 Send Message</h3>
+
+      <!-- Formsubmit (no backend needed) -->
+      <form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        
+        <input type="email" name="email" placeholder="Your Email" required>
+        
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Email Direct -->
+    <div class="card email-box">
+      <h3>📧 Direct Email</h3>
+      <p>You can also contact me directly via email</p>
+
+      <a class="email-link" href="mailto:mahirdev@example.com">
+        Send Email
+      </a>
+
+      <p style="margin-top:15px; font-size:13px; color:#9ca3af;">
+        Replace email with your real Gmail
+      </p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

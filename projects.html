@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - Mahir Dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0b0f1a, #111827);
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+
+    header h2 {
+      margin: 0;
+      color: #00ffcc;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5e1;
+      margin-bottom: 40px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(0,255,204,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(0,255,204,0.2);
+    }
+
+    .card h3 {
+      color: #00ffcc;
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 12px;
+      background: #1f2937;
+      color: #00ffcc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: #00ffcc;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #00c9a7;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>🎮 Mahir Dev</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>My Projects</h1>
+  <p>Here are some of my Game & App development works</p>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>🏍️ Bike Racing Game</h3>
+      <p>A 2D/3D bike racing game built using Unity with realistic physics and smooth controls.</p>
+      <span class="tag">Unity</span>
+      <span class="tag">C#</span>
+    </div>
+
+    <div class="card">
+      <h3>📱 Notes App</h3>
+      <p>A simple Android notes application with save, edit and delete features.</p>
+      <span class="tag">Android</span>
+      <span class="tag">Java</span>
+    </div>
+
+    <div class="card">
+      <h3>🌐 Portfolio Website</h3>
+      <p>A modern responsive portfolio website built using HTML, CSS and JavaScript.</p>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+    </div>
+
+    <div class="card">
+      <h3>🎮 Endless Runner Game</h3>
+      <p>Infinite runner style game with obstacle generation and score system.</p>
+      <span class="tag">Unity</span>
+      <span class="tag">Game Dev</span>
+    </div>
+
+  </div>
+
+  <a class="btn" href="index.html">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>
