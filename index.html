@@ -34,11 +34,18 @@
       border: none;
     }
 
+    /* HERO SECTION FIXED */
     .hero {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 60px;
       gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero > div {
+      flex: 1;
     }
 
     .hero h1 {
@@ -55,9 +62,13 @@
       max-width: 400px;
     }
 
+    /* 🔥 HERO IMAGE FIX */
     .hero img {
-      width: 500px;
+      width: 100%;
+      max-width: 700px;
+      height: auto;
       border-radius: 20px;
+      box-shadow: 0 0 40px rgba(138, 125, 255, 0.6);
     }
 
     .buttons button {
@@ -86,6 +97,8 @@
       background: #111;
       margin: 20px;
       border-radius: 10px;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     .projects {
@@ -108,6 +121,23 @@
     .card img {
       width: 100%;
       border-radius: 10px;
+    }
+
+    /* 📱 MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
 
   </style>
@@ -140,9 +170,8 @@
     </div>
   </div>
 
-  <!-- HERO IMAGE -->
   <div>
-    <img src="assets/hero.png">
+    <img src="assets/hero.png" alt="hero">
   </div>
 </section>
 
@@ -159,25 +188,25 @@
   <div class="cards">
 
     <div class="card">
-      <img src="assets/game1.jpg" alt="">
+      <img src="assets/game1.jpg">
       <h3>Bike Racing Game</h3>
       <p>High speed racing game.</p>
     </div>
 
     <div class="card">
-      <img src="assets/game2.jpg" alt="">
+      <img src="assets/game2.jpg">
       <h3>Car Drift Simulator</h3>
       <p>Realistic drifting physics.</p>
     </div>
 
     <div class="card">
-      <img src="assets/app1.jpg" alt="">
+      <img src="assets/app1.jpg">
       <h3>Finance App</h3>
       <p>Track your income.</p>
     </div>
 
     <div class="card">
-      <img src="assets/web1.jpg" alt="">
+      <img src="assets/web1.jpg">
       <h3>Dashboard App</h3>
       <p>Analytics dashboard.</p>
     </div>
