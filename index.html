@@ -1,62 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahir Dev Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Mahir Dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0b0f1a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: linear-gradient(45deg, purple, blue);
+      color: white;
+      border: none;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      padding: 60px;
+      gap: 40px;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin: 10px 0;
+    }
+
+    .hero h2 {
+      color: #8a7dff;
+    }
+
+    .hero p {
+      color: #aaa;
+      max-width: 400px;
+    }
+
+    .hero img {
+      width: 500px;
+      border-radius: 20px;
+    }
+
+    .buttons button {
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: purple;
+      color: white;
+    }
+
+    .outline {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      background: #111;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .projects {
+      padding: 50px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #111;
+      padding: 15px;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+  </style>
 </head>
+
 <body>
 
 <header>
   <h2>🎮 Mahir Dev</h2>
   <nav>
     <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Skills</a>
     <a href="#">Projects</a>
     <a href="#">Contact</a>
   </nav>
+  <button class="btn">Download CV</button>
 </header>
 
 <section class="hero">
-  <div class="text">
+  <div>
     <h3>Hello, I'm</h3>
     <h1>Mahir Hossain</h1>
     <h2>Game & App Developer</h2>
-    <p>I build immersive games and powerful apps.</p>
+    <p>I build immersive games and high-quality apps.</p>
 
-    <div class="btns">
-      <button class="primary">View Work</button>
-      <button class="secondary">Contact</button>
+    <div class="buttons">
+      <button class="primary">View My Work</button>
+      <button class="outline">Contact Me</button>
     </div>
   </div>
+
+  <!-- HERO IMAGE -->
+  <div>
+    <img src="assets/hero.png" alt="hero">
+  </div>
+</section>
+
+<section class="stats">
+  <div>15+ Games</div>
+  <div>10+ Apps</div>
+  <div>5+ Years</div>
+  <div>20+ Clients</div>
 </section>
 
 <section class="projects">
   <h2>My Projects</h2>
 
-  <div class="grid">
+  <div class="cards">
+
     <div class="card">
-      <img src="https://via.placeholder.com/300">
+      <img src="assets/game1.jpg" alt="">
       <h3>Bike Racing Game</h3>
+      <p>High speed racing game.</p>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/300">
+      <img src="assets/game2.jpg" alt="">
       <h3>Car Drift Simulator</h3>
+      <p>Realistic drifting physics.</p>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/300">
+      <img src="assets/app1.jpg" alt="">
       <h3>Finance App</h3>
+      <p>Track your income.</p>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/300">
-      <h3>Dashboard Web App</h3>
+      <img src="assets/web1.jpg" alt="">
+      <h3>Dashboard App</h3>
+      <p>Analytics dashboard.</p>
     </div>
+
   </div>
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
