@@ -1,147 +1,75 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #0b0f1a;
+  background: #0a0a0f;
   color: white;
 }
 
-/* HEADER */
+/* Navbar */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
-  align-items: center;
+  padding: 20px;
+  background: #0d0d15;
 }
 
 nav a {
   margin: 0 10px;
+  color: white;
   text-decoration: none;
-  color: white;
 }
 
-.btn {
-  padding: 10px 20px;
-  border-radius: 8px;
-  background: linear-gradient(45deg, purple, blue);
-  color: white;
-  border: none;
-}
-
-/* 🔥 HERO */
+/* Hero */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 60px;
-  gap: 40px;
-  min-height: 90vh;
+  padding: 80px;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
 }
 
-.hero-text {
-  flex: 1;
+.hero h1 {
+  font-size: 50px;
 }
 
-.hero-text h1 {
-  font-size: 60px;
-  margin: 10px 0;
+.hero h2 {
+  color: #7f5af0;
 }
 
-.hero-text h2 {
-  color: #8a7dff;
-}
-
-.hero-text p {
-  color: #aaa;
-  max-width: 400px;
-}
-
-/* 🔥 IMAGE BIG */
-.hero-image {
-  flex: 1.5;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 550px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 0 60px rgba(138, 125, 255, 0.8);
-  transform: scale(1.05);
-}
-
-/* BUTTONS */
-.buttons button {
-  margin: 10px;
-  padding: 12px 25px;
-  border-radius: 8px;
+/* Buttons */
+.btns button {
+  padding: 10px 20px;
+  margin-right: 10px;
   border: none;
   cursor: pointer;
 }
 
 .primary {
-  background: purple;
+  background: #7f5af0;
   color: white;
 }
 
-.outline {
+.secondary {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid #7f5af0;
   color: white;
 }
 
-/* STATS */
-.stats {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px;
-  background: #111;
-  margin: 20px;
-  border-radius: 10px;
-  flex-wrap: wrap;
-}
-
-/* PROJECTS */
+/* Projects */
 .projects {
   padding: 50px;
 }
 
-.cards {
-  display: flex;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .card {
   background: #111;
   padding: 15px;
   border-radius: 10px;
-  width: 250px;
+  transition: 0.3s;
 }
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* 📱 MOBILE */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 40px;
-  }
-
-  .hero-image img {
-    height: 300px;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
+.card:hover {
+  transform: scale(1.05);
 }
