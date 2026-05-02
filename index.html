@@ -5,7 +5,142 @@
   <title>Mahir Dev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0b0f1a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: linear-gradient(45deg, purple, blue);
+      color: white;
+      border: none;
+    }
+
+    /* HERO SECTION FIXED */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero > div {
+      flex: 1;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin: 10px 0;
+    }
+
+    .hero h2 {
+      color: #8a7dff;
+    }
+
+    .hero p {
+      color: #aaa;
+      max-width: 400px;
+    }
+
+    /* 🔥 HERO IMAGE FIX */
+    .hero img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(138, 125, 255, 0.6);
+    }
+
+    .buttons button {
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: purple;
+      color: white;
+    }
+
+    .outline {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      background: #111;
+      margin: 20px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .projects {
+      padding: 50px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #111;
+      padding: 15px;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* 📱 MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
@@ -13,19 +148,17 @@
 <header>
   <h2>🎮 Mahir Dev</h2>
   <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skill.html">Skills</a>
+    <a href="contact.html">Contact</a>
+    <a href="projects.html">Projects</a>
   </nav>
   <button class="btn">Download CV</button>
 </header>
 
-<!-- 🔥 HERO -->
 <section class="hero">
-
-  <div class="hero-text">
+  <div>
     <h3>Hello, I'm</h3>
     <h1>Mahir Hossain</h1>
     <h2>Game & App Developer</h2>
@@ -37,13 +170,11 @@
     </div>
   </div>
 
-  <div class="hero-image">
+  <div>
     <img src="assets/hero.png" alt="hero">
   </div>
-
 </section>
 
-<!-- STATS -->
 <section class="stats">
   <div>15+ Games</div>
   <div>10+ Apps</div>
@@ -51,7 +182,6 @@
   <div>20+ Clients</div>
 </section>
 
-<!-- PROJECTS -->
 <section class="projects">
   <h2>My Projects</h2>
 
@@ -81,6 +211,18 @@
       <p>Analytics dashboard.</p>
     </div>
 
+      <div class="card">
+      <img src="assets/web2.jpg">
+      <h3>Tools App</h3>
+      <p>Analytics dashboard.</p>
+    </div>
+
+   <div class="card">
+      <img src="assets/web3.jpg">
+      <h3>Tasbih App</h3>
+      <p>Analytics dashboard.</p>
+    </div>
+    
   </div>
 </section>
 
